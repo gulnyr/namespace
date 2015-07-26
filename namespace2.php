@@ -4,9 +4,9 @@ namespace Test2;
 // Вызовем данные из страницы namespace.php
 require_once './namespace.php';
 
-// Импортируем нужное пространство имен
+// Импортируем нужное пространство имен и заодно придумаем псевдоним, в нашем случае короткий T
 
-use Test1;
+use Test1 as T;
 
 // Создадим один в один похожий класс Eddard
 
@@ -26,7 +26,7 @@ class Eddard
 
 // Записывается обратным слэшем, когда указываем адрес пространства имен
 
-$eddard = new Test1\Eddard("hello1");
+$eddard = new T\Eddard("hello1");
 $eddard -> show_str();
 ?><br><br><?php
 
