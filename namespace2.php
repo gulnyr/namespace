@@ -28,7 +28,7 @@ class Eddard
 
 $eddard = new T\Eddard("hello1");
 $eddard -> show_str();
-?><br><br><?php
+?><br><?php
 
 // Здесь мы не указали пространство имен, он указывает текущую,
 // т.е. будет так: $eddard = new Test2\Eddard("hello2");
